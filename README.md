@@ -19,7 +19,7 @@ $ bundle
 
 Esse::Rails provides instrumentation for Esse search operations. It uses Esse::Events to instrument when a search is performed.
 
-If you are using lograge, you can add the following to your `config/initializers/lograge.rb`:
+If you are using [lograge](https://github.com/roidrage/lograge), you can optionally require `esse/rails/lograge` to log search operations:
 
 ```ruby
 require 'esse/rails/lograge'
