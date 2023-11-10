@@ -6,3 +6,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## 0.0.1 - 2023-11-10
 The first release of the Esse::Rails. This release includes the following features:
+* Instrumentation for Esse search operations
