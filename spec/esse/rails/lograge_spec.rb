@@ -4,12 +4,12 @@ require "spec_helper"
 require "lograge"
 require "esse/rails/lograge"
 
-RSpec.describe "Esse Event subscribe integration" do
+RSpec.describe Esse::Rails::Lograge do
   before do
-    Esse::Rails::Lograge::Railtie.run_initializers
+    described_class::Railtie.run_initializers
   end
 
   it "customizes the Lograge configuration" do
-    expect(Esse::Rails::Lograge::Railtie.initializers.find { |i| i.name == "esse.lograge" }).not_to be_nil
+    expect(described_class::Railtie.initializers.find { |i| i.name == "esse.lograge" }).not_to be_nil
   end
 end

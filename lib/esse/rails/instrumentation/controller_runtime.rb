@@ -25,7 +25,6 @@ module Esse
           self.esse_runtime = nil
         end
 
-
         protected
 
         attr_internal :esse_runtime
@@ -52,7 +51,6 @@ module Esse
           super
           payload[:esse_runtime] = (esse_runtime || 0) + Esse::Rails::Instrumentation::RuntimeRegistry.reset
         end
-
       end
     end
   end
