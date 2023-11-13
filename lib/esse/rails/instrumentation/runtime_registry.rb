@@ -25,7 +25,7 @@ module Esse
   end
 end
 
-Esse::Events.__bus__.events.keys.each do |event_name|
+Esse::Events.__bus__.events.keys.grep(/^elasticsearch/).each do |event_name|
   Esse::Events.subscribe(event_name) do |event|
     Esse::Rails::Instrumentation::RuntimeRegistry.runtime += event[:runtime].to_f
   end
