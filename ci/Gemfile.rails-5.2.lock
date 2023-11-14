@@ -1,14 +1,5 @@
-GIT
-  remote: https://github.com/marcosgz/esse.git
-  revision: 7b9bf919265464e20dd42fc58d7908a1b90d73fa
-  branch: master
-  specs:
-    esse (0.2.2)
-      multi_json
-      thor (>= 0.19)
-
 PATH
-  remote: .
+  remote: ..
   specs:
     esse-rails (0.0.2)
       activesupport (>= 4.2, < 8)
@@ -46,18 +37,21 @@ GEM
     crass (1.0.6)
     diff-lcs (1.5.0)
     erubi (1.12.0)
+    esse (0.2.3)
+      multi_json
+      thor (>= 0.19)
     hashdiff (1.0.1)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
     lint_roller (1.1.0)
-    lograge (0.11.1)
+    lograge (0.14.0)
       actionpack (>= 4)
       activesupport (>= 4)
       railties (>= 4)
       request_store (~> 1.0)
-    loofah (2.21.3)
+    loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     method_source (1.0.0)
@@ -161,11 +155,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  activesupport (~> 5.2)
-  esse!
   esse-rails!
   lograge
   pry
+  railties (~> 5.2.0)
   rake (~> 12.3)
   rspec (~> 3.0)
   rubocop (~> 1.20)
