@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
-require "dotenv/load"
 require "esse/rails"
 
 require "support/class_helpers"

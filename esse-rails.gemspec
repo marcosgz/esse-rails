@@ -32,8 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "esse"
   spec.add_dependency "activesupport", ">= 4.2", "< 8"
   spec.add_development_dependency "lograge"
-  spec.add_development_dependency "awesome_print"
-  spec.add_development_dependency "dotenv"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rake", "~> 12.3"
   spec.add_development_dependency "rspec", "~> 3.0"
