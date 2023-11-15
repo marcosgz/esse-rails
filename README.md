@@ -1,5 +1,5 @@
 # esse-rails
- Ruby on Rails extensions for "esse" elasticsearch/opensearch client
+ Ruby on Rails extensions for [esse](https://github.com/marcosgz/esse) elasticsearch/opensearch client
 
 ## Installation
 
