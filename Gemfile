@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "esse", github: "marcosgz/esse", branch: "main"
+gem "esse", "~> 0.2.2"
 gem "activesupport", "~> 5.2"
 
 # Specify your gem's dependencies in esse-rails.gemspec

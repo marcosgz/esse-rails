@@ -1,18 +1,9 @@
-GIT
-  remote: https://github.com/marcosgz/esse.git
-  revision: 7b9bf919265464e20dd42fc58d7908a1b90d73fa
-  branch: master
-  specs:
-    esse (0.2.2)
-      multi_json
-      thor (>= 0.19)
-
 PATH
   remote: .
   specs:
     esse-rails (0.0.2)
       activesupport (>= 4.2, < 8)
-      esse
+      esse (>= 0.2.2)
 
 GEM
   remote: https://rubygems.org/
@@ -46,6 +37,9 @@ GEM
     crass (1.0.6)
     diff-lcs (1.5.0)
     erubi (1.12.0)
+    esse (0.2.4)
+      multi_json
+      thor (>= 0.19)
     hashdiff (1.0.1)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
@@ -162,7 +156,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport (~> 5.2)
-  esse!
+  esse (~> 0.2.2)
   esse-rails!
   lograge
   pry
