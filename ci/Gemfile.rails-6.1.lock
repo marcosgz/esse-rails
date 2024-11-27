@@ -1,7 +1,7 @@
 PATH
   remote: ..
   specs:
-    esse-rails (0.0.3)
+    esse-rails (0.0.4)
       activesupport (>= 4.2)
       esse (>= 0.2.2)
 

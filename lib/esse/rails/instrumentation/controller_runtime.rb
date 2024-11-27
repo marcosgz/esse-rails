@@ -37,7 +37,7 @@ module Esse
         def cleanup_view_runtime
           if logger&.info?
             search_rt_before_render = Esse::Rails::Instrumentation::RuntimeRegistry.reset
-            self.esse_runtime = (db_runtime || 0) + search_rt_before_render
+            self.esse_runtime = (respond_to?(:db_runtime) && db_runtime || 0) + search_rt_before_render
             runtime = super
             search_rt_after_render = Esse::Rails::Instrumentation::RuntimeRegistry.reset
             self.esse_runtime += search_rt_after_render
