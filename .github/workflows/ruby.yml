@@ -18,7 +18,7 @@ jobs:
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
@@ -27,18 +27,38 @@ jobs:
       - name: Tests
         run: bundle exec rspec
 
-  ruby-3:
+  ruby-3-0:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        ruby: ["3.0", 3.1]
+        ruby: ["3.0", "3.1"]
         gemfile: [ci/Gemfile.rails-6.1]
     name: ${{ matrix.ruby }}-${{ matrix.gemfile }}
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+          rubygems: latest
+      - name: Tests
+        run: bundle exec rspec
+
+  ruby-3-latest:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby: ["3.2", "3.3"]
+        gemfile: [ci/Gemfile.rails-7.2, ci/Gemfile.rails-8.0]
+    name: ${{ matrix.ruby }}-${{ matrix.gemfile }}
+    env:
+      BUNDLE_GEMFILE: ${{ matrix.gemfile }}
+    steps:
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}

@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     esse-rails (0.0.2)
-      activesupport (>= 4.2, < 8)
+      activesupport (>= 4.2)
       esse (>= 0.2.2)
 
 GEM

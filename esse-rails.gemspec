@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "esse", ">= 0.2.2"
-  spec.add_dependency "activesupport", ">= 4.2", "< 8"
+  spec.add_dependency "activesupport", ">= 4.2"
   spec.add_development_dependency "lograge"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rake", "~> 12.3"

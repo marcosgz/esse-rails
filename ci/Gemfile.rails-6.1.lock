@@ -1,8 +1,8 @@
 PATH
   remote: ..
   specs:
-    esse-rails (0.0.2)
-      activesupport (>= 4.2, < 8)
+    esse-rails (0.0.3)
+      activesupport (>= 4.2)
       esse (>= 0.2.2)
 
 GEM
@@ -38,7 +38,7 @@ GEM
     crass (1.0.6)
     diff-lcs (1.5.0)
     erubi (1.12.0)
-    esse (0.2.3)
+    esse (0.3.5)
       multi_json
       thor (>= 0.19)
     hashdiff (1.0.1)
@@ -170,4 +170,4 @@ DEPENDENCIES
   yard (~> 0.9.20)
 
 BUNDLED WITH
-   2.4.13
+   2.3.22
