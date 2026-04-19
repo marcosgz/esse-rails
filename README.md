@@ -1,6 +1,10 @@
 # esse-rails
  Ruby on Rails extensions for [esse](https://github.com/marcosgz/esse) elasticsearch/opensearch client
 
+## Documentation
+
+Full guides, Railtie reference, and generator docs are published at **[gems.marcosz.com.br/esse-rails](https://gems.marcosz.com.br/esse-rails/)** — part of the [marcosgz Ruby gem catalogue](https://gems.marcosz.com.br).
+
 ## Installation
 
 Add this line to your application's Gemfile:
