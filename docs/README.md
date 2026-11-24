@@ -45,4 +45,4 @@ That's it. No initializer or DSL is required for controller instrumentation. For
 
 ## License
 
-MIT.
+GPL-3.0-or-later.
