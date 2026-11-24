@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "Esse on Rails"
   spec.description = "A Ruby on Rails integration for Esse gem"
   spec.homepage = "https://github.com/marcosgz/esse-rails"
-  spec.license = "MIT"
+  spec.license = "GPL-3.0-or-later"
   spec.required_ruby_version = ">= 2.5.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
